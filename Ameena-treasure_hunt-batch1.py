@@ -1,3 +1,6 @@
+#treasure hunt game
+#Ameena-batch1-treasure_hunt
+#player must find treasures without getting eaten by the beast or burned by fire.
 answer=input("would you like to play? yes/no")
 
 if answer.lower().strip()=="yes":
