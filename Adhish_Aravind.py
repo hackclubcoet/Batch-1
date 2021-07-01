@@ -12,7 +12,7 @@ def adding():
 
 # function for displaying the list
 def display():
-    print("To-Do List:", end="\n")
+    print("To-Do List:")
     print('\n'.join([str(i) for i in a]))
 
 
