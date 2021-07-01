@@ -6,16 +6,16 @@ def password(q): #this function have steps to generate password
   for n in range(q):
     k=k+random.choice(s) #random helps to take random value from set s
   print("Generated Password: ",k)
-while True:  
-  password(int(input("enter the length: ")))#user can input length and function call
-  reply=input("to create new password enter YES else NO ")
+password(int(input("enter the length: ")))  
+while True: #below steps help user to continue generating password if wanted
+  reply=input("to create new password enter ""yes"" or enter ""no"" to exit ")
   if reply.upper()=="NO":
      break
   elif reply.upper()=="YES":
-     continue 
+    password(int(input("enter the length: ")))
+    continue 
   else:
-    reply=input("invalid enter yes or no ")
-    if reply.upper()=="NO":
-      break
+    print ("INVALID REPLY")
+    continue
     
       
