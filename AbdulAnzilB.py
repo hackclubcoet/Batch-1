@@ -107,7 +107,7 @@ while answer == "y":
         print(str(first_num) + " / " + str(second_num) + " = " + str(find_division(first_num, second_num)) + " .")
     elif choice == 5:
         print("sin(" + str(angle) + ") = " + str("{:f}".format(find_sine(angle))) + " .")
-        # "{f:}".format() converts the scientific notation of answer to decimal notation
+        # "{:f}".format() converts the scientific notation of answer to decimal notation
     else:
         print("cos(" + str(angle) + ") = " + str("{:f}".format(find_cosine(angle))) + " .")
 
